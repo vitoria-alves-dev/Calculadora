@@ -20,6 +20,8 @@ public static class MauiProgram
 #endif
 
 		builder.Services.AddSingleton<Calculadora.Services.ICalculadoraAntecipacao, Calculadora.Services.CalculadoraAntecipacao>();
+		builder.Services.AddTransient<ViewModels.MainViewModel>();
+		builder.Services.AddTransient<MainPage>();
 
 		return builder.Build();
 	}

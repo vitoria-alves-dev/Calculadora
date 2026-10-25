@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,4 +11,8 @@
     <PackageReference Include="ClosedXML" Version="0.105.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Calculadora.Mobile\**" />
+    <None Remove="Calculadora.Mobile\**" />
+  </ItemGroup>
 </Project>
